@@ -47,10 +47,6 @@ All endpoints authenticate via the `Authorization` header (bearer token); never 
 
 Pagination is cursor-based (opaque cursors, not offsets) to stay correct as the feed grows.
 
-## Data Flow
-
-**Phase 4 (Data Flow) skipped — Twitter feed is a request/response system, not a data-processing pipeline.** The framework reserves Phase 4 for analytics / ML inference / ETL / transcoding / search-indexing pipelines. Request/response paths are documented adequately by the API section (Phase 3) and the HLD prose (Phase 5). The async fan-out worker is a single async hop, not a pipeline, and is fully captured by the Phase 5 HLD plus the Phase 6 deep dives.
-
 ## High-Level Design
 
 ![HLD](hld.png)
