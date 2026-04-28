@@ -37,7 +37,7 @@ All elements share these:
 | `text` | The display text |
 | `originalText` | Same as text |
 | `fontSize` | Size in pixels (16-20 recommended) |
-| `fontFamily` | 3 for monospace (use this) |
+| `fontFamily` | 5 for Excalifont (default hand-drawn, matches shape style — use this); 1 for Virgil (legacy hand-drawn); 3 for Cascadia monospace (only when showing code snippets) |
 | `textAlign` | "left", "center", "right" |
 | `verticalAlign` | "top", "middle", "bottom" |
 | `containerId` | ID of parent shape |
