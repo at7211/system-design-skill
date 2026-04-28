@@ -10,7 +10,6 @@
 | `arrow` | Connections between shapes |
 | `text` | Labels inside shapes |
 | `line` | Non-arrow connections |
-| `frame` | Grouping containers |
 
 ## Common Properties
 
@@ -68,4 +67,9 @@ All elements share these:
 Add for rounded corners:
 ```json
 "roundness": { "type": 3 }
+```
+
+For tighter or looser corner radius, optionally include `value` (a pixel-ish number; defaults to ~32):
+```json
+"roundness": { "type": 3, "value": 25 }
 ```

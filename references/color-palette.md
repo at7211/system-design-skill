@@ -65,3 +65,25 @@ Used for code snippets, data examples, and other concrete evidence inside techni
 | Property | Value |
 |----------|-------|
 | Canvas background | `#ffffff` |
+
+---
+
+## System-Design Tier → Palette Mapping
+
+Use these mappings consistently when constructing system-design diagrams (HLD and deep dives), so every diagram in the workflow follows the same color language.
+
+| Tier / Component Class | Semantic Purpose | Fill | Stroke |
+|---|---|---|---|
+| Client (web/mobile/CLI) | Tertiary | `#93c5fd` | `#1e3a5f` |
+| Edge (CDN, Load Balancer, API Gateway) | End/Success | `#a7f3d0` | `#047857` |
+| App tier (App Server, Service) | Primary/Neutral | `#3b82f6` | `#1e3a5f` |
+| Data tier (SQL DB, Follow Graph DB) | Secondary | `#60a5fa` | `#1e3a5f` |
+| Cache (Redis, Feed Store) | Start/Trigger | `#fed7aa` | `#c2410c` |
+| Async / Messaging (Queue, Worker, Pub/Sub, Fan-out) | AI/LLM | `#ddd6fe` | `#6d28d9` |
+| Object Storage / CDN content | Inactive/Disabled | `#dbeafe` | `#1e40af` |
+| Search Index | Decision | `#fef3c7` | `#b45309` |
+| Decision points (diamond shapes in zoom-ins) | Decision | `#fef3c7` | `#b45309` |
+| Annotations: warning / bottleneck callouts | Warning/Reset | `#fee2e2` | `#dc2626` |
+| Annotations: error / failure mode | Error | `#fecaca` | `#b91c1c` |
+
+Region cluster containers use no fill (`backgroundColor: "transparent"`) with a `#666` dashed stroke. Cost annotations use `#999` text on no fill.
